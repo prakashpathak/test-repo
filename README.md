@@ -1,4 +1,4 @@
 test-repo
 =========
 
-test to understand check in check out
+This is my test repository.
