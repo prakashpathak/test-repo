@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en-US" ng-app="Site">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Pages</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+    body {padding-top:60px;}
+      .nav{width:100% }
+      .val-error{color: #F00;font-weight: bold;}
+  </style>
+</head>
+<body ng-controller="AppController">
+  <!-- Navbar -->
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="#/page/home">Profile Pages</a>
+        <ul class="nav">
+            <li ng-repeat="menu in menuList" title="{{menu.text}}" class="{active: slug == 'home'}"  ng-click="showSubMenu(menu,$index)">
+                <a href="{{menu.url}}" class="{{menu.customClass}}">{{menu.text}}</a>
+            </li>
+        </ul>
+        <ul class="submenu-nav">
+        <li ng-repeat="subMenu in subMenuList" title="{{subMenu.text}}" class="{{subMenu.parentLiClass}}">
+            <a href="{{subMenu.url}}" class="{{subMenu.customClass}}">{{subMenu.text}}</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="span8">
+        <!-- Dynamic content -->
+        <div ng-view></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Includes -->
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="http://code.angularjs.org/1.1.5/angular-resource.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/restangular/latest/restangular.min.js"></script>
+  <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+  <script type="text/javascript" src="js/site.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+    "home": {
+        "title": "My Personal Information",
+        "content": ""
+    },
+  "personalInformation": {
+      "title": "My Personal Information",
+      "content": ""
+  },
+  "about": {
+    "title": "Billing details",
+    "content": "This is the Billing page. Welcome"
+  },
+  "contacts": {
+    "title": "My Trips",
+    "content": "This is the Trips page. Welcome"
+  }
+}

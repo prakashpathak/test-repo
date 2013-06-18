@@ -1,0 +1,23 @@
+{"topMenu":[
+    {
+        "text": "My Account",
+        "url": "/#/pages/my-account/new-user",
+        "customClass": "myAccount",
+        "parentLiClass":"parentmyAccount",
+		"subMenu":[{"text":"Personal Info","url":"val 2","customClass":"","parentLiClass":""},{"text":"Billing Details","url":"val 2","customClass":"","parentLiClass":""}]
+    },
+    {
+        "text": "Mobile settings",
+        "url": "/#/pages/my-billing-details",
+        "customClass": "myAccount test",
+        "parentLiClass":"parentmyAccount 3333",
+		"subMenu":[{"text":"val 11","url":"val 21","customClass":"","parentLiClass":""},{"text":"val 27775","url":"val 2","customClass":"","parentLiClass":""}]
+    },
+    {
+        "text": "My Trips",
+        "url": "/#/pages/my-trips",
+        "customClass": "mytrips",
+        "parentLiClass":"parentmyAccount sdfsdf",
+		"subMenu":[{"text":"val 12","url":"val 22","customClass":"","parentLiClass":""},{"text":"val 20","url":"val 2","customClass":"","parentLiClass":""}]
+    }
+]}
